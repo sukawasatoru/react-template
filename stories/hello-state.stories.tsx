@@ -22,7 +22,7 @@ const HelloStories: FunctionComponent<unknown> = () => {
     return <div>
         Hello
     </div>;
-}
+};
 
 storiesOf('Hello Stories', module)
     .add('state', () => <HelloStories/>);
