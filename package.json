@@ -5,6 +5,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "build-storybook": "build-storybook",
+    "bundle-analyzer": "BUNDLE_ANALYZER=1 npm run build",
+    "check": "eslint --ext .js,.jsx,.ts,.tsx src",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development",
     "storybook": "start-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
