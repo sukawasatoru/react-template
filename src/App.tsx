@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import * as React from 'react';
+import {default as React} from 'react';
+import {Col, Container, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'material-design-icons/iconfont/material-icons.css';
-import './app.css';
-import {Col, Container, Row} from "react-bootstrap";
+import './App.css';
 
 const App = () => {
     return <Container>

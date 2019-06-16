@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-import * as React from 'react';
-import {FunctionComponent} from 'react';
+import {default as React, FunctionComponent} from 'react';
 import {storiesOf} from "@storybook/react";
 
 const HelloStories: FunctionComponent<unknown> = () => {
