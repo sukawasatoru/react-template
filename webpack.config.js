@@ -26,7 +26,6 @@ const webpack = require('webpack');
  */
 const webpackMerge = require('webpack-merge');
 
-
 /**
  *  @type {webpack.Configuration}
  */
@@ -66,7 +65,6 @@ config.devServer = {
         errors: true,
     },
 };
-
 
 if (process.env.NODE_ENV === 'production') {
     config = webpackMerge(config, {
