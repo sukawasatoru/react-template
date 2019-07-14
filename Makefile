@@ -49,7 +49,7 @@ ifeq ($(CI)$(FORCE_DEPLOY),)
 	@echo If you want to deploy, should set variable "FORCE_DEPLOY=true"
 	exit 1
 endif
-	$(GIT) add -NA
+	$(GIT) add -A
 	$(GIT) diff --staged --exit-code
 	$(MAKE) clean
 	$(MAKE) release
