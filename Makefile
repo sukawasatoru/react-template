@@ -14,7 +14,7 @@
 
 SHELL = /bin/sh
 .SUFFIXES:
-.PHONY: all release clean distclean test deploy setup storybook
+.PHONY: all release clean distclean check test deploy setup storybook
 GIT = git
 NPM = npm
 NPX = npx
@@ -41,8 +41,12 @@ clean:
 distclean: clean
 	-$(RMRF) node_modules
 
+check: test
+# 	TODO
+
 test:
-	$(NPM) test
+# 	TODO
+	-$(NPM) test
 
 deploy:
 ifeq ($(CI)$(FORCE_DEPLOY),)
